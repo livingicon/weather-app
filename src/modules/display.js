@@ -1,8 +1,6 @@
-import weatherModule from "./data.js";
-import uiModule from "./ui.js";
-
 const viewModule = (() => {
   let direction = "";
+  let weatherDescription = "";
 
   const degToDirection = function(degree) {
     if (degree > 337.5) {
@@ -31,7 +29,7 @@ const viewModule = (() => {
     for (let i = 0; i < words.length; i++) {
       words[i] = words[i][0].toUpperCase() + words[i].substr(1);
     }
-    weatherDescription =  words.join(" ");
+    weatherDescription = words.join(" ");
   };
 
   const displayResult = function(info){

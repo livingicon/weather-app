@@ -1,18 +1,8 @@
-import viewModule from "./display.js";
 import weatherModule from "./data.js";
 
 const uiModule = (() => {
-  const search = document.getElementById('search');
   const toggleSwitch = document.getElementById('toggleSwitch');
   let tempScale = "imperial";
-
-  search.addEventListener('keydown', (e) => {
-    if (e.code === "Enter") {
-      e.preventDefault();
-      weatherModule.getWeatherData(search.value);
-      search.value = "";
-    }
-  });
 
   toggleSwitch.addEventListener('change', (e) => {
     const cityName = document.getElementById('cityName').textContent;
@@ -20,7 +10,7 @@ const uiModule = (() => {
     cityName === "" ? (null) : (toggleScale());
   });
 
-  function toggleScale() { // HERE!!!
+  function toggleScale() {
     const togglePosition = document.getElementById('toggleSwitch');
     const cityName = document.getElementById('cityName').textContent;
 
