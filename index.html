@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+  
+  <div class="header">
+    <h1 class="headerTitle">Weather App</h1>
+  </div>
+  <main class="mainContent">
+    <form id="weatherSearch">
+      <input type="text" id="search" placeholder="Search city name...">
+      <label class="switch">
+        <input id="toggleSwitch" type="checkbox" checked>
+        <span class="slider round"></span>
+        <span class="labels" data-on="°F" data-off="°C"></span>
+      </label>
+    </form>
+
+    <div id="displayCard">
+      <h3 id="cityName" class="cardContent"></h3>
+      <p id="currentWeather" class="cardContent"></p>
+      <p id="currentTemp" class="cardContent"></p>
+      <p id="feelsLike" class="cardContent"></p>
+      <p id="humidity" class="cardContent"></p>
+      <p id="wind" class="cardContent"></p>
+    </div>
+
+    <p id="photoCredit">Photo by <a href="https://unsplash.com/@jbowersphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Bowers</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </p>
+  </main>
+  <div class="footer">Josh-Hancock Odin Project</div>
+
+</body>
+</html>
