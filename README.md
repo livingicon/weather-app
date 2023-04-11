@@ -12,7 +12,7 @@
 <pre class="notranslate">
   <code>
     git clone https://github.com/livingicon/weather-app.git
-    cd shopping-cart
+    cd weather-app
     npm install
     npm start
   </code>
