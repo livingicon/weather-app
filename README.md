@@ -1,4 +1,4 @@
-![alt text](https://github.com/livingicon/shopping-cart/blob/main/dist/images/weather-app.png?raw=true)
+![alt text](https://github.com/livingicon/weather-app/blob/main/dist/images/weather-app.png?raw=true)
 
 <h1>Weather App</h1>
 
