@@ -1,3 +1,4 @@
+require('dotenv').config();
 import viewModule from "./display.js";
 
 const weatherModule = (() => {
@@ -22,7 +23,8 @@ const weatherModule = (() => {
 
     togglePosition.checked ? (tempScale = "imperial") : (tempScale = "metric");
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${tempScale}&APPID=f59db8f3e672caf010ea9eef7f1433a6`, 
+      // const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${tempScale}&APPID=f59db8f3e672caf010ea9eef7f1433a6`, 
+      const response = await fetch(OPEN_WEATHER_API, 
       {mode: 'cors'});
       if (!response.ok) throw new Error(`${location} not found.
       Search must be in the form of "City", "City, State" or "City, Country".`);
